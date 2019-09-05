@@ -1,0 +1,10 @@
+version: "3"
+services:
+  tools:
+    build: .
+    tty: true
+    volumes:
+      - ./dump:/tmp/dump
+    environment:
+      - SQLPACKAGE_CONN=Data Source=$MSSQL_CLI_SERVER;Initial Catalog=$MSSQL_CLI_DATABASE;User ID=$MSSQL_CLI_USER;Password=$MSSQL_CLI_PASSWORD;
+
