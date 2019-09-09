@@ -7,5 +7,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends unzip mssql-cli
   && unzip sqlpackage-linux-x64-latest.zip -d /opt/sqlpackage \
   && chmod a+x /opt/sqlpackage/sqlpackage \
   && echo "export PATH=\"\$PATH:/opt/sqlpackage\"" >> ~/.bashrc \
+  && apt-get purge -y --auto-remove unzip \
   && rm -rf /var/lib/apt/lists/*
 
