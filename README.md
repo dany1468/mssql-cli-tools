@@ -15,6 +15,12 @@
 see below:  
 https://github.com/dbcli/mssql-cli/blob/master/doc/usage_guide.md
 
+### sqlcmd
+
+```
+% sqlcmd -S host -d db -U user -P pass
+```
+
 ### sqlpackage
 
 ```
